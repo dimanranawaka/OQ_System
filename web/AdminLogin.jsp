@@ -44,20 +44,20 @@
 <font color="blue"><center><h1>Admin Login</h1></center></font>
 <font color="red">
   <%
-    if (request.getParameter("msg")!= null)
-      out.println(request.getParameter("msg"));
+    if (request.getParameter("message2")!= null)
+      out.println(request.getParameter("message2"));
   %>
 </font>
 <font color="green">
   <%
-    if (request.getParameter("msg1")!=null)
-      out.println(request.getParameter("msg1"));
+    if (request.getParameter("message1")!=null)
+      out.println(request.getParameter("message1"));
   %>
 </font>
 <form action="adminValidator" method="post">
         <pre>
-            User ID  : <input type="text" name="uName"> <br>
-            Password : <input type="password" name="uPassword"> <br>
+            User ID  : <input type="text" name="adminUserName"> <br>
+            Password : <input type="password" name="adminPassword"> <br>
             <input onclick="location.href='index.html'" type="button" value="Exit" class="btn btn-outline-primary"> <input type="submit" value="Login" class="btn btn-outline-primary">
         </pre>
 </form>
