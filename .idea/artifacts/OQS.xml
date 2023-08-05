@@ -7,6 +7,9 @@
           <element id="library" level="project" name="mysql-connector-java-8.0.20" />
           <element id="library" level="project" name="apache.tomee.javaee.api" />
         </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="OQS" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="OQS/web/Web" />
     </root>

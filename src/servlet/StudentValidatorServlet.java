@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "studentValidator")
+@WebServlet(urlPatterns = "/studentValidator")
 
 public class StudentValidatorServlet extends HttpServlet {
     @Override
