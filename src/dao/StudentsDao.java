@@ -1,12 +1,12 @@
 package dao;
 
-import model.Admin;
+import model.Student;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class AdminsDao {
-    public static boolean doValidate(Admin admin){
+public class StudentsDao {
+    public static boolean doValidate(Student student){
 
         boolean status = false;
 
@@ -14,18 +14,26 @@ public class AdminsDao {
 
             DatabaseOperationsDao databaseOperationsDao = new DatabaseOperationsDao();
 
-            String query = "SELECT * FROM admintable WHERE adminUserName=? and adminPassword=?";
+            String query = "SELECT * FROM studenttable where studentUserName=? and studentPassword=?";
 
             ResultSet resultSet = databaseOperationsDao.retrieveData(query);
 
-            if (resultSet == admin) {
-                status = true;
+            if (resultSet == student){
+
+                status=true;
+
+            }else{
+
+                status=false;
+
             }
 
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        return status;
+
+        return  status;
+
     }
 }

@@ -35,7 +35,7 @@ public class AdminValidatorServlet extends HttpServlet {
 
         if (status){
 
-            session.setAttribute("userName", admin.getAdminUserName());
+            session.setAttribute("adminUserName", admin.getAdminUserName());
             resp.sendRedirect("AdminPanel.jsp");
 
         }else {

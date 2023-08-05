@@ -57,8 +57,8 @@
     </font>
     <form action="studentValidator" method="post">
         <pre>
-            User ID  : <input type="text" name="uName"> <br>
-            Password : <input type="password" name="uPassword"> <br>
+            User ID  : <input type="text" name="studentUserName"> <br>
+            Password : <input type="password" name="studentPassword"> <br>
             <input onclick="location.href='index.html'" type="button" value="Exit" class="btn btn-outline-primary"> <input type="submit" value="Login" class="btn btn-outline-primary">
         </pre>
     </form>
